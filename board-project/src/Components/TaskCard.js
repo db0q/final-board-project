@@ -20,7 +20,7 @@ const TaskCard = ({
   };
 
   return (
-    <div className='bg-white p-5 rounded-lg my-1 border w-full shadow-lg  '>
+    <div className='bg-white p-5 rounded-lg my-1 border w-full shadow-lg  ml-48'>
       <div className='sm:flex-row flex justify-between'>
         <h1 className="font-bold text-black text-l">{task.title}</h1>
         <button

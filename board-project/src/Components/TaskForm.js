@@ -20,9 +20,9 @@ function TaskForm({ task, handleTaskChange, handleTaskSubmit, showForm, setShowF
     <>
       {showForm ?
         (< form onSubmit={() => handleTaskSubmit(task)}
-          className="bg-white flex-col  p-5 rounded-lg border m-2 " >
+          className="bg-white flex-col  p-5 rounded-lg border mx-2 w-72" >
 
-          <div className="flex flex-row items-center justify-center gap-3">
+          <div className="flex flex-row items-center justify-center gap-3 ">
             <label className="font-bold">Title</label>
             <input className="border w-full p-1 md:w-40 rounded-lg " type="text" placeholder="Enter Title"
               onChange={handleTaskChange}
