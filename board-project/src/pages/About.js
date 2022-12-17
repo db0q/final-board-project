@@ -4,28 +4,34 @@ import image1 from './image1.jpeg'
 
 function About() {
   return (
-    <>
-    <div className="logo">
-      <img src={logo} alt="Logo" />
-      <button className="rounded shadow-lg my-4 w-full bg-gray-900 text-white font-bold p-2 hover:bg-gray-300
-          hover:cursor-pointer hover:text-white">Login</button>
-          <button className="rounded shadow-lg my-4 w-full bg-lime-500 text-white font-bold p-2 hover:bg-lime-300
-          hover:cursor-pointer hover:text-white" >Sign Up</button>
-    </div>
-    <div className="paragraph">
-      <p><b>TaskGuru helps teams move work forward.</b></p>
-      <span>Collaborate, manage projetcs, and reach new productivity peaks. From high rises to the home office, the way your team works in unique-accomplish it all with TaskGuru </span>
+    <div className="flex flex-col ml-32 w-full justify-center items-center bg-slate-100">
+    <div className="logo flex flex-col">
+    <img src={logo} alt="Logo" />
+      
       <div>
-      <input type="email" id="email" name="email"></input>
-      <button className="rounded shadow-lg my-4 w-full bg-lime-500 text-white font-bold p-2 hover:bg-lime-300
-          hover:cursor-pointer hover:text-white" >Sign up-it's free!</button></div>
-          <img src={image1} alt="Image" />
+      <button className=" rounded shadow-lg my-4 w-44 bg-gray-900 text-white font-bold p-2 hover:bg-gray-300
+          hover:cursor-pointer hover:text-white">Login</button>
+          <button className="ml-5 rounded shadow-lg my-4 w-44 bg-white text-black font-bold p-2 hover:bg-gray-300
+          hover:cursor-pointer hover:text-white" >Sign Up</button>
+        </div>
     </div>
-    <div className="footer paragrpagh">
+    <div className="flex flex-col paragraph justify-center items-center w-2/4 mt-5">
+      <p className="text-3xl"><b>TaskGuru helps teams move work forward.</b></p>
+      <span className="text-sm w-3/4 my-5">Collaborate, manage projetcs, and reach new productivity peaks.</span>
+      <div className="flex flex-col justify-center items-center border  py-10 px-32 bg-white">
+      <input type="email" id="email" name="email" className="py-1 w-72 bg-gray-200 border-2 outline-1" placeholder="Enter you Email"></input>
+      <button className="rounded shadow-lg my-4 w-44 bg-gray-900 text-white font-bold p-2 hover:bg-gray-300
+          hover:cursor-pointer hover:text-white mt-10" >Sign up-it's free!</button>
+          </div>
+         
+    </div>
+    <div className="flex flex-col footer paragrpagh justify-center items-center w-3/4 mt-5">
       <p><b>It's more than work, it's a way of working together.</b></p>
-      <span>Start with a TaskGuru board, lists, and cards. Customize and expand with more features as your teamwork grows. Manage projects, organize tasks, and build team spirit- all in one place.</span>
+      <span className="w-3/4 mt-5">Start with a TaskGuru board, lists, and cards. Customize and expand with more features as your teamwork grows. Manage projects, organize tasks, and build team spirit- all in one place.</span>
     </div>
-    </>
+    </div>
+    
+  
   );
 }
 

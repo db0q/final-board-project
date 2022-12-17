@@ -57,7 +57,7 @@ function Home() {
   };
 
   return (
-    <div className="font-serif w-full flex flex-col">
+    <div className="font-serif w-full flex flex-col bg-slate-100">
       <div className="flex justify-center items-center">
          
       <BoardForm
