@@ -4,7 +4,7 @@ import IntroCard from "./Components/IntroCard"
 function App() {
   return (
     
-  <div className='flex flex-row font-serif bg-purple-100'>
+  <div className='flex flex-row font-serif bg-slate-400'>
     
     <Sidebar/>
   </div>

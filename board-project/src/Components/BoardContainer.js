@@ -4,7 +4,7 @@ import BoardCard from "./BoardCard";
 function BoardContainer({ boards, onDelete }) {
 
   return (
-    <div className=" font bg-amber-400 mr-20	 ml-56 mb-24 md:px-10  grid md:gap-x-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="font p-20 mr-20 ml-72 mb-24 md:px-3  grid md:gap-x-3 md:grid-cols-1s lg:grid-cols-2 xl:grid-cols-3">
       {boards.map((board) => (
         <BoardCard  key={board.boardId} board={board} onDelete={onDelete} />
       ))}

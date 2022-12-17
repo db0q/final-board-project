@@ -20,7 +20,7 @@ function TaskForm({ task, handleTaskChange, handleTaskSubmit, showForm, setShowF
     <>
       {showForm ?
         (< form onSubmit={() => handleTaskSubmit(task)}
-          className="bg-white flex-col  p-5 rounded-lg border mx-2 w-72" >
+          className="bg-slate-200 flex-col  p-5 rounded-lg border mx-2 w-72" >
 
           <div className="flex flex-row items-center justify-center gap-3 ">
             <label className="font-bold">Title</label>
@@ -55,19 +55,19 @@ function TaskForm({ task, handleTaskChange, handleTaskSubmit, showForm, setShowF
             />
           </div>
 
-          <input className="rounded shadow-lg my-4 w-full bg-purple-900 text-white font-bold p-2 hover:bg-purple-300
+          <input className="rounded shadow-lg my-4 w-full bg-slate-900 text-white font-bold p-2 hover:bg-slate-300
           hover:cursor-pointer hover:text-white"
             type="submit"
             value={isUpdate ? "Update" : "Add"}
             onClick={handleTaskSubmit}
           />
 
-          <button onClick={() => setShowForm(false)} className="rounded shadow-lg my-4 w-full bg-purple-900 text-white font-bold p-2 hover:bg-purple-300
+          <button onClick={() => setShowForm(false)} className="rounded shadow-lg my-4 w-full bg-slate-900 text-white font-bold p-2 hover:bg-slate-300
           hover:cursor-pointer hover:text-white">Cancel</button>
         </form>
 
         ) : (
-          <button onClick={handleAddNewEmptyTask} className="rounded shadow-lg my-4 w-full bg-purple-900 text-white font-bold p-2 hover:bg-purple-300
+          <button onClick={handleAddNewEmptyTask} className="rounded shadow-lg my-4 w-44 bg-slate-900 text-white font-bold p-2 hover:bg-slate-300
           hover:cursor-pointer hover:text-white">Add Task</button>
         )
       }

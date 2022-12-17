@@ -94,15 +94,15 @@ function BoardCard({ board, onDelete }) {
   }, [board.boardId]);
 
   return (
-    <div className="px-8 mt-10 lg:mb-10 bg-white md:mx-3 shadow-lg rounded-xl 
-       mx-auto justify-center align-center w-36 md:w-64 md:gap-14 h-full 	">
+    <div className="flex flex-col items-center lg:mb-10 bg-white md:mx-3 rounded-lg
+      align-center w-36 gap-14 md:w-80 md:gap-14 h-full w-auto ">
 
         <div className="flex flex-row mt-2 justify-center items-center gap-8 ">
         <h1 className="text-3xl font-bold text-black text-center py-2 px-2">
         {board.title}
       </h1>
       <button className="border-2 border-white w-[50px] float-right bg-white
-         mt-4 text-white font-bold -mt-0 hover:text-purple-700 hover:bg-white border p-1 bg-purple-700"
+         mt-4 text-white font-bold -mt-0 hover:text-slate-700 hover:bg-white border p-1 bg-slate-700"
         onClick={() => onDelete(board.boardId)}>X
       </button>
 
@@ -137,13 +137,6 @@ function BoardCard({ board, onDelete }) {
         isUpdate={isUpdate}
         setIsUpdate={setIsUpdate}
       />
-
-      <h6 className="text-2xl font-bold text-white justify-center mx-auto pb-3 pt-1">
-        {
-          tasks.length > 0 && tasks.length === 1 ?
-          `${tasks.length} Task` : `${tasks.length} Tasks`
-        }
-      </h6>
     </div>
   );
 }

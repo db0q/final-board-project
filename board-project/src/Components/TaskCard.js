@@ -20,11 +20,11 @@ const TaskCard = ({
   };
 
   return (
-    <div className='bg-white p-5 rounded-lg my-1 border w-full shadow-lg  ml-48'>
+    <div className='flex  flex-col bg-slate-200 p-5 rounded-lg my-1 border w-72 shadow-lg justify-center'>
       <div className='sm:flex-row flex justify-between'>
         <h1 className="font-bold text-black text-l">{task.title}</h1>
         <button
-          className="text-white font-bold -mt-0 hover:text-purple-700 hover:bg-white border px-2 bg-purple-700"
+          className="text-white font-bold -mt-0 hover:text-slate-700 hover:bg-white border px-2 bg-slate-700"
           onClick={handleDelete}> X </button>
       </div>
 
@@ -49,7 +49,7 @@ const TaskCard = ({
 
       <form className='pt-2 m-1 flex justify-center items-center gap-5'>
         <input
-          className="accent-purple-700"
+          className="accent-slate-700"
           type="checkbox"
           id=""
           name="completed"
@@ -69,7 +69,7 @@ const TaskCard = ({
           </div>
         ) : null }
 
-        <button className="rounded shadow-lg my-4 w-full bg-purple-900 text-white font-bold p-2 hover:bg-purple-300
+        <button className="rounded shadow-lg my-4 w-full bg-slate-900 text-white font-bold p-2 hover:bg-slate-300
           hover:cursor-pointer hover:text-white" onClick={handleEdit}>Edit</button>
       </div>
     </div>

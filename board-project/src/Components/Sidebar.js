@@ -29,7 +29,7 @@ function Sidebar() {
       </button>
       <div
         id="sidebar"
-        className=" fixed static bg-green-700		 h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
+        className=" fixed static bg-white		 h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
         x-show="sidenav"
       >
         <div className="space-y-6 md:space-y-10 mt-10">
@@ -64,7 +64,7 @@ function Sidebar() {
             <Link
             to="/home"
               href=""
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700  rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white  rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
@@ -81,7 +81,7 @@ function Sidebar() {
             <Link 
             to="/about"
               href=""
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700 hover:scale-105 rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
@@ -97,7 +97,7 @@ function Sidebar() {
             </Link>
             <a
               href=""
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700 hover:scale-105 rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
@@ -117,7 +117,7 @@ function Sidebar() {
             </a>
             <a
               href=""
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700 hover:scale-105 rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
@@ -136,7 +136,7 @@ function Sidebar() {
             </a>
             <a
               href=""
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700 hover:scale-105 rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
@@ -154,7 +154,7 @@ function Sidebar() {
             </a>
             <a
               href=""
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700 hover:scale-105 rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
@@ -172,7 +172,7 @@ function Sidebar() {
             </a>
             <a
               href=""
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700 hover:scale-105 rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
@@ -188,7 +188,7 @@ function Sidebar() {
             </a>
             <a
               href="#"
-              className="text-xl font-medium text-white py-2 px-2 hover:bg-white hover:text-purple-700 hover:scale-105 rounded-md transition duration-150 ease-in-out"
+              className="text-xl font-medium text-dark py-2 px-2 hover:bg-slate-900 hover:text-white hover:scale-105 rounded-md transition duration-150 ease-in-out"
             >
               <svg
                 className="w-6 h-6 fill-current inline-block"
