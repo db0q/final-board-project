@@ -95,8 +95,9 @@ function BoardCard({ board, onDelete }) {
 
   return (
     <div className="px-8 mt-10 lg:mb-10 bg-white md:mx-3 shadow-lg rounded-xl 
-       mx-auto justify-center align-center w-56 md:w-72 h-full">
-        <div className="flex flex-row mt-2 justify-center items-center gap-10 bg-">
+       mx-auto justify-center align-center w-36 md:w-64 md:gap-14 h-full 	">
+
+        <div className="flex flex-row mt-2 justify-center items-center gap-8 ">
         <h1 className="text-3xl font-bold text-black text-center py-2 px-2">
         {board.title}
       </h1>

@@ -6,14 +6,14 @@ import IntroCard from "./IntroCard";
 function Sidebar() {
   return (
   
-    <div className="flex flex-row">
+    <div className="flex flex-row 	font">
     <div
       id="view"
-      className="h-full flex flex-row"
+      className="h-full flex flex-row absolute "
       x-data="{ sidenav: true }"
     >
       <button
-        className="p-2 border-2 bg-white rounded-md border-gray-200 shadow-lg text-gray-500 focus:bg-purple-700 focus:outline-none focus:text-white absolute top-0 left-0 sm:hidden"
+        className="p-2 border-2 bg-white rounded-md border-gray-200 shadow-lg text-gray-500 focus:bg-purple-700 focus:outline-none focus:text-white  top-0 left-0 "
       >
         <svg
           className="w-5 h-5 fill-current"
@@ -29,31 +29,12 @@ function Sidebar() {
       </button>
       <div
         id="sidebar"
-        className="bg-purple-700 h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
+        className=" fixed static bg-green-700		 h-screen md:block shadow-xl px-3 w-30 md:w-60 lg:w-60 overflow-x-hidden transition-transform duration-300 ease-in-out"
         x-show="sidenav"
       >
         <div className="space-y-6 md:space-y-10 mt-10">
-          <h1 className="font-bold text-4xl text-center md:hidden">
-            K<span className="text-white">.B</span>
-          </h1>
-          <h1 className="hidden md:block font-bold text-sm md:text-5xl text-center text-white">
-            Kanban Board
-          </h1>
-          <div id="profile" className="space-y-3">
-            <img
-              src="https://avatars.githubusercontent.com/u/57622665?s=460&u=8f581f4c4acd4c18c33a87b3e6476112325e8b38&v=4"
-              alt="Avatar user"
-              className="w-10 md:w-16 rounded-full mx-auto"
-            />
-            <div>
-              <h2
-                className="mt-5 font-bold text-xs md:text-2xl text-center text-black"
-              >
-              Ahmad Hassoun
-              </h2>
-              <p className="mt-2 text-xl text-white text-center">Administrator</p>
-            </div>
-          </div>
+         
+
           <div
             className="flex border-2 border-gray-200 rounded-md"
           >
@@ -112,7 +93,7 @@ function Sidebar() {
                   d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"
                 ></path>
               </svg>
-              <span className="ml-2" >Products</span>
+              <span className="ml-2" >Main Page</span>
             </Link>
             <a
               href=""
@@ -131,6 +112,7 @@ function Sidebar() {
                   // clip-rule="evenodd"
                 ></path>
               </svg>
+              
               <span className="ml-2">Reports</span>
             </a>
             <a
